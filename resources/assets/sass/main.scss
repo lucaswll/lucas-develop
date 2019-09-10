@@ -1,0 +1,247 @@
+.hide {
+    display: none;
+}
+
+html, body {
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+
+    main {
+        padding: 20px 0;
+    }
+
+    nav.navbar {
+        ul li.active a {
+            font-weight: 500;
+        }
+    }
+ }
+
+ b {
+     font-weight: 500;
+ }
+
+ .table {
+
+    thead th {
+        font-weight: 500;
+    }
+
+    tr {
+        text-align: center;
+
+        td, th {
+            vertical-align: middle;
+            white-space: nowrap;
+        }
+    }
+ }
+
+ .card {
+
+    .card-header {
+        .title {
+            font-weight: 500;
+        }
+    }
+
+    .card-body {
+        &.no-padding {
+            padding: 0;
+        }
+    }
+
+    .card-footer {
+
+    }
+ }
+
+ .page {
+
+    &.index {
+
+        table {
+            margin-bottom: 0;
+
+            thead {
+                th {
+                    border: none;
+                }
+            }
+        }
+
+        .card {
+            
+            .card-header {
+                display: flex;
+                align-items: center;
+
+                > div {
+                    width: 50%;
+                }
+            }
+
+            .card-footer {
+                display: flex;
+                align-items: center;
+
+                .pagination-wrapper {
+                    flex-grow: 1;
+
+                    .pagination {
+                        margin-bottom: 0;
+                    }
+                }
+
+                &.flex-end {
+                    justify-content: flex-end;
+                }
+            }
+        }
+
+        .note {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+    }
+ }
+
+ .input-group {
+
+     > div {
+
+         .btn.btn-light {
+            background-color: #e9ecef;
+            border-color: #ced4da;
+            box-shadow: none !important;
+
+            &:hover {
+                background-color: #ced4da;
+            }
+         }
+     }
+
+     .dropdown-toggle {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+     }
+
+
+ }
+ 
+ /** --------------------------------------------------------------------------------------------------------------------------------------
+ * Parsley
+ */
+ 
+ ul.parsley-errors-list {
+    margin: 5px 0 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+        color: #f4516c;
+        font-size: .85rem;
+    }
+}
+
+/** --------------------------------------------------------------------------------------------------------------------------------------
+* Alerts
+*/
+
+.alert-container {
+    
+    .alert {
+        margin-bottom: 20px;
+
+        p {
+            margin: 0
+        }
+
+        .close {
+            padding: 0;
+            height: 100%;
+            margin-right: 20px;
+            opacity: 0.2;
+            font-size: 14px;
+        }
+    }
+}
+
+ /** --------------------------------------------------------------------------------------------------------------------------------------
+ * Selectpicker
+ */
+
+.bootstrap-select {
+
+    .dropdown-toggle {
+        background-color: #fff !important;
+        border: 1px solid #ced4da;
+        padding: .375rem .75rem;
+    }
+
+    &.show {
+
+        .dropdown-toggle {
+            border-bottom-right-radius: 0 !important;
+            border-bottom-left-radius: 0 !important;
+        }
+    }
+
+    .dropdown-menu.show {
+        border-radius: 0;
+        margin-top: 0;
+        border-top: none;
+        padding: 0;
+        border-bottom-right-radius: .25rem !important;
+        border-bottom-left-radius: .25rem !important;
+
+        .bs-searchbox {
+            padding: 10px;
+        }
+    }
+
+}
+
+ /** --------------------------------------------------------------------------------------------------------------------------------------
+ * Bootbox
+ */
+ .modal .modal-content .modal-header {
+     align-items: center;
+     flex-direction: row-reverse;
+ }
+
+/** --------------------------------------------------------------------------------------------------------------------------------------
+* Responsivo
+*/
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+
+    .pagination {
+
+        li:not(:first-child):not(:last-child):not(.active) {
+            display: none;
+        }
+    }
+
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+}
